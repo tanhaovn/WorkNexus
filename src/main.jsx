@@ -21,11 +21,23 @@ const router = createBrowserRouter([
         element: <TodoApp />,
       },
       {
-        path: "/users",
+        path: "/createCV",
         element: <UserPage />,
       },
       {
-        path: "/books",
+        path: "/company",
+        element: <BookPage />,
+      },
+      {
+        path: "/register",
+        element: <BookPage />,
+      },
+      {
+        path: "/login",
+        element: <BookPage />,
+      },
+      {
+        path: "/recruiter",
         element: <BookPage />,
       },
     ],

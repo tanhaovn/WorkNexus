@@ -2,26 +2,52 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: 0.2px solid rgb(215, 215, 215);
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  flex: 1;
+  justify-content: center;
+}
+
+.right {
+  justify-content: flex-end;
 }
 
 li {
-  float: left;
+  margin: 0;
 }
 
 li a {
   display: block;
-  color: white;
+  color: rgb(31, 23, 23);
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 30px;
   text-decoration: none;
+
+  font-family: "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
 }
 
-li a:hover:not(.active) {
-  background-color: #111;
+li a:hover {
+  color: rgb(0, 0, 0);
 }
 
-.active {
-  background-color: #04aa6d;
+li a.active {
+  color: rgb(48, 188, 149);
+  border-bottom: 4px solid rgb(48, 188, 149);
+}
+
+li a:not(.active) {
+  border-bottom: none;
 }
